@@ -1,0 +1,174 @@
+@media screen and (max-width: 1433px) and (min-width: 1024px) {
+  /* Aside Section */
+  main {
+    width: 100%;
+  }
+  .mobile-responsivness {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  aside {
+    position: static;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .gallery-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  /* Main */
+  .card p {
+    width: 80%;
+  }
+  .card i {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card p:last-child {
+    width: 80%;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+  }
+
+  /* Testimonials */
+  .quote {
+    margin-top: 25px;
+  }
+
+  /* Gallery */
+  .photos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Aside Section */
+  main {
+    width: 100%;
+  }
+  .mobile-responsivness {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  aside {
+    position: static;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  .mobile-responsivness {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  aside {
+    margin-top: 100px;
+    position: static;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    height: 100%;
+    padding: 15px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  /* Main */
+  .container {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card i,
+  .card h3,
+  .card p,
+  .card p:last-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .card i {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  .card h3 {
+    margin-bottom: 5px;
+  }
+  .card p {
+    width: 100%;
+  }
+  .card p:last-child {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  main .description {
+    margin-bottom: 50px;
+  }
+  /* Testimonials */
+  .quote {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+  .main-title i {
+    font-size: 20px;
+  }
+
+  /* Gallery */
+  .photos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Aside Section */
+}
+
+@media screen and (max-width: 538px) {
+  .photos {
+    grid-template-columns: 1fr;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

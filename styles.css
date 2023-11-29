@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("imgs/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 0px 15%;
+  height: 250vh;
+}
+
+/* Header */
+header {
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 35px;
+  width: 275px;
+  margin-bottom: 50px;
+}
+
+header h2 {
+  font-size: 64px;
+  color: rgb(35, 35, 35);
+}
+header span {
+  color: rgb(64, 155, 64);
+  font-size: 8px;
+}
+header p {
+  color: rgb(35, 35, 35);
+  font-style: italic;
+}
+
+/* Main Section */
+main {
+  position: relative;
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 35px;
+  width: 85%;
+}
+
+.main-title {
+  border-left: 5px solid rgb(64, 155, 64);
+  padding: 5px 0 5px 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title i {
+  font-size: 26px;
+}
+
+
+main .description {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 50px;
+}
+.card {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  grid-template-rows: auto 1fr auto; 
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+}
+
+.card p {
+  font-size: 20px;
+  color: gray;
+  font-style: italic;
+  width: 95%;
+}
+
+.card i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: span 2;
+  font-size: 48px;
+  background-color: rgb(64, 155, 64);
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+}
+
+.card p:last-child {
+  grid-column: span 2;
+  font-size: 16px;
+  color: black;
+  font-style: normal;
+  width: 75%;
+  margin-top: 15px;
+}
+
+
+/* Collapsed */
+.collapsed {
+  display: block;
+}
+
+#toggle-collapse:checked + .collapsed {
+  display: none;
+}
+
+.toggle-button {
+  cursor: pointer;
+  color: rgb(64, 155, 64);
+  font-size: 26px;
+}
+
+
+/* Testimonials */
+#testimonials {
+  margin-top: 50px;
+}
+
+.quote {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.quote i {
+  font-size: 48px;
+  color: rgb(64, 155, 64);
+}
+.quote p {
+  letter-spacing: 0.25px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+/* Second Collapse */
+.collapsed2 {
+  display: block;
+}
+
+#toggle-collapse2:checked + .collapsed2 {
+  display: none;
+}
+
+.toggle-button2 {
+  cursor: pointer;
+  color: rgb(64, 155, 64);
+  font-size: 26px;
+}
+
+
+/* Gallery Section */
+#gallery {
+  margin-top: 50px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 25px;
+  gap: 25px;
+}
+.photos img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Third Collapse */
+.collapsed3 {
+  display: block;
+}
+
+#toggle-collapse3:checked + .collapsed3 {
+  display: none;
+}
+
+.toggle-button3 {
+  cursor: pointer;
+  color: rgb(64, 155, 64);
+  font-size: 26px;
+}
+
+/* Aside Section*/
+aside {
+  background-color: rgb(255, 255, 255, 0.9);
+  width: 300px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  padding: 40px 20px 0;
+}
+
+aside .top-header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.gallery-aside img {
+  width: 100%;
+  border-radius: 15px;
+}
+.gallery-aside img:first-child {
+  margin-top: 25px;
+}
+.gallery-aside img:last-child {
+  margin-bottom: 25px
+}
